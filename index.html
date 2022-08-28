@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <!-- mob nav -->
+      <div class="mob none">
+        <nav class="div_inner_nav">
+          <img class="close_menu" onclick="closemenu()" src="IMG/Btn_close.svg" alt="close">
+          <ul class="div_nav_ul">
+            <a href="#">
+              <li class="div_li">დომენი</li>
+            </a>
+            <a href="#">
+              <li class="div_li">ტრანსფერი</li>
+            </a>
+            <a href="#">
+              <li class="div_li">ჰოსტინგი</li>
+            </a>
+            <a href="#">
+              <li class="div_li">Gmail</li>
+            </a>
+            <a href="#">
+              <li class="div_li">ვებგვერდი</li>
+            </a>
+            <a href="#">
+              <li class="div_li">დომენის მარკეტი</li>
+            </a>
+          </ul>
+        </nav>
+        <nav class="sec_div_nav">
+          <ul class="sec_div_nav_ul">
+            <a href="#">
+              <li class="div_li">ჩვენს შესახებ</li>
+            </a>
+            <a href="#">
+              <li class="div_li">ფასები</li>
+            </a>
+            <a href="#">
+              <li class="div_li">ბლოგი</li>
+            </a>
+            <a href="#">
+              <li class="div_li">დახმარება</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+      <!-- mob nav -->
+      <header class="header_inner">
+        <div class="section">
+          <img class="menu_icon none" src="img/menu icon.svg" onclick="openmenu()" alt="menu-icon">
+          <a href="#">
+            <img src="img/title-image.svg" class="title" alt="title">
+          </a>
+        </div>
+        <nav class="nav">
+          <ul class="nav_ul">
+            <li class="nav_ul_li notf">
+              <a href="#">
+                <img src="img/notification.svg" alt="notifocation">
+              </a>
+            </li>
+            <li class="nav_ul_li blue none">
+              <a href="#">
+                <img src="img/blue notif.svg" alt="notifocation">
+              </a>
+            </li>
+            <li class="nav_ul_li blue none">
+              <a href="#">
+                <img src="img/blue shop.svg" alt="shop">
+                <p class="shop"></p>
+              </a>
+            </li>
+            <li class="nav_ul_li blue none">
+              <a href="#">
+                <img src="img/blue acc.svg" alt="acc">
+              </a>
+            </li>
+            <li class="nav_ul_li shopp">
+              <a href="#">
+                <img src="img/shop.svg" alt="shop-icon">
+                <p class="shop"></p>
+              </a>
+            </li>
+            <li class="nav_ul_li">
+              <a hraef="#">
+                <div class="account">
+                  <img src="img/account.svg" class="acc-icon" alt="shop-icon">
+                  <p>Kancha Co.</p>
+                  <img src="img/Shape.svg" class="shape" alt="shape-icon">
+                </div>
+              </a>
+            </li>
+            <li class="nav_ul_li lang">
+              <div class="nav_ul_lang">
+                <img src="img/georgia.svg" alt="georgia-icon">
+                </d>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+  </header>
+  <header class="sec_header">
+    <div class="container">
+      <div class="div_inner">
+        <div class="div_nav">
+          <nav class="div_inner_nav">
+            <ul class="div_nav_ul">
+              <a href="#">
+                <li class="div_li">დომენი</li>
+              </a>
+              <a href="#">
+                <li class="div_li">ტრანსფერი</li>
+              </a>
+              <a href="#">
+                <li class="div_li">ჰოსტინგი</li>
+              </a>
+              <a href="#">
+                <li class="div_li">Gmail</li>
+              </a>
+              <a href="#">
+                <li class="div_li">ვებგვერდი</li>
+              </a>
+              <a href="#">
+                <li class="div_li">დომენის მარკეტი</li>
+              </a>
+            </ul>
+          </nav>
+          <nav class="sec_div_nav">
+            <ul class="sec_div_nav_ul">
+              <a href="#">
+                <li class="div_li">ჩვენს შესახებ</li>
+              </a>
+              <a href="#">
+                <li class="div_li">ფასები</li>
+              </a>
+              <a href="#">
+                <li class="div_li">ბლოგი</li>
+              </a>
+              <a href="#">
+                <li class="div_li">დახმარება</li>
+              </a>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!----------------- header ----------------->
+  <!----------------- section ----------------->
+  <section class="intro">
+    <div class="container">
+      <div class="intro_bg">
+        <img class="intro_img" id="bri" src="img/intro-bg.png" alt="img">
+        <img class="intro_img" src="img/shutterstock_1040057017@2x.png" alt="img">
+        <p class="intro_text">გაყიდე და იყიდე დომენი მარტივად</p>
+      </div>
+      <div class="top_filtring">
+        <div class="top_status">
+          <h3 class="status_h3">დომენები მარკეტზე: </h3>
+        </div>
+        <div class="top_filter">
+          <ul class="top_filter_list">
+            <li class="filter-items">სორტირება:</li>
+            <li class="filter-items">
+              დამატების თარიღით
+              <img src="img/Fill 919.svg" alt="down-up">
+            </li>
+            <li class="filter-items">ვადის ამოწურვით</li>
+            <li class="filter-items">ფასით</li>
+            <li class="filter-items">ანბანით</li>
+          </ul>
+        </div>
+        <!--* menu top filter -->
+        <button class="top_filter_button" onclick="openfilter()">
+          <p>სორტირება</p><img src="img/sliders.png" alt="sliders">
+        </button>
+        
+        <button class="top_filter_list_button"  onclick="opensotireba()">
+          <p>სორტირება</p><img src="img/Dropdown - 2.svg" alt="sliders">
+        </button>
+        <!-- for mobile -->
+        <div class="top_filter_menu_mob none">
+          <img class="close_filter" onclick="closesotireba()" src="IMG/Btn_close.svg" alt="close">
+          <ul class="top_filter_list_mob">
+            <li class="filter-items">სორტირება:</li>
+            <li class="filter-items">
+              დამატების თარიღით
+              <img src="img/Fill 919.svg" alt="down-up">
+            </li>
+            <li class="filter-items">ვადის ამოწურვით</li>
+            <li class="filter-items">ფასით</li>
+            <li class="filter-items">ანბანით</li>
+          </ul>
+          <div class="filter_ask" style="display: flex;">
+            <a class="filter_help" href="#">როგორ გავყიდო დომენი?</a>
+          </div>
+        </div>
+        <!-- for desktop -->
+        <div class="top_filter_menu">
+          <ul class="top_filter_list">
+            <li class="filter-items">სორტირება:</li>
+            <li class="filter-items">
+              დამატების თარიღით
+              <img src="img/Fill 919.svg" alt="down-up">
+            </li>
+            <li class="filter-items">ვადის ამოწურვით</li>
+            <li class="filter-items">ფასით</li>
+            <li class="filter-items">ანბანით</li>
+          </ul>
+        </div>
+        <!--* menu top filter -->
+        <div class="filter_ask">
+          <a class="filter_help" href="#">როგორ გავყიდო დომენი?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------- section -------->
+  <!------- filters -------->
+  <div class="sss">
+    <div class="container2">
+      <div class="filter">
+        <div class="filter_items" id="filter_items">
+          <div class="filter_title">
+              <h3 class="filter_title_h3">ფილტრი</h3>
+              <img class="close_filter" onclick="closefilter()" src="IMG/Btn_close.svg" alt="close">
+            </div>
+          <div class="filter_search">
+            <input type="text" id="search" placeholder="სახელით ძიება">
+            <img src="img/clear.svg" alt="clear" id="cleartext" onclick="document.querySelector('.filter_search #search').value = ''">
+          </div>
+          <p class="filter_price">ფასი</p>
+          <div class="filter_price_items" id="filter_price_items">
+            <input class="filter_min_price" id="price_range" type="text" value="350">
+            <label for="text">₾</label>
+            <input class="filter_max_price" id="price_range" type="text" value="500">
+            <label for="text">₾</label>
+          </div>
+          <div class="div_range">
+            <div class="slider" id="slider">
+              <div class="progress" id="progress"></div>
+            </div>
+            <div class="range_input" id="range_input">
+              <input class="range_min" id="input" type="range" min="0" max="500" step="10" value="350">
+              <input class="range_max" id="input" type="range" min="0" max="500" step="10" value="500">
+            </div>
+          </div>
+          <!--  meore -->
+          <p class="filter_letter_lenght">სიმბოლოების რაოდონობა</p>
+          <div class="filter_lenght_items" id="filter_lenght_items">
+            <input class="filter_min_lenght" id="input" type="text" value="11">
+            <input class="filter_max_lenght" id="input" type="text" value="26">
+          </div>
+          <div class="div_range">
+            <div class="sec_slider" id="sec_slider">
+              <div class="sec_progress" id="sec_progress"></div>
+            </div>
+            <div class="range_input_symbol" id="range_input_symbol">
+              <input class="range_min_symbol" id="input" type="range" min="0" max="26" step="1" value="11">
+              <input class="range_max_symbol" id="input" type="range" min="0" max="26" step="1" value="26">
+            </div>
+          </div>
+          <p class="filter_categories">კატეგორიები</p>
+          <div class="filter_categorie_items">
+            <div class="flex cate">
+              <input class="filter_checkbox" type="checkbox" rel="biznesi" onclick="check()">
+              <label for="checkbox">ბიზნესი</label>
+            </div>
+            <div class="flex cate">
+              <input class="filter_checkbox" type="checkbox" rel="udzravi_qoneba" onclick="check()">
+              <label for="checkbox">უძრავი ქონება</label>
+            </div>
+            <div class="flex cate">
+              <input class="filter_checkbox" type="checkbox" rel="media" onclick="check()">
+              <label for="checkbox">მედია</label>
+            </div>
+          </div>
+          <p class="filter_zone_title">დომენის ზონა</p>
+          <div class="filter_domen_zone">
+            <div class="flex">
+              <input class="filter_checkbox" type="checkbox" rel="ge" onclick="change()" value=".ge">
+              <label for="checkbox">.ge</label>
+            </div>
+            <div class="flex">
+              <input class="filter_checkbox" type="checkbox" rel="comge" onclick="change()">
+              <label for="checkbox">.com.ge</label>
+            </div>
+            <div class="flex">
+              <input class="filter_checkbox" type="checkbox" rel="netge" onclick="change()">
+              <label for="checkbox">.net.ge</label>
+            </div>
+            <div class="flex">
+              <input class="filter_checkbox" type="checkbox" rel="orgge" onclick="change()">
+              <label for="checkbox">.org.ge</label>
+            </div>
+            <div class="flex">
+              <input class="filter_checkbox" type="checkbox" rel="eduge" onclick="change()">
+              <label for="checkbox">.edu.ge</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------- filters -------->
+      <!------- section items -------->
+      <div class="div2">
+        <section class="lists">
+          <div class="lists_inner">
+            <div class="lists_items ge udzravi_qoneba biznesi">
+              <div class="lists_title">
+                <div class="lists_arrow_img"></div>
+                <p class="lists_item_title">example1.ge</p>
+              </div>
+              <div class="lists_price">
+                <div>
+                  <p class="lists_price_title">100</p>
+                  <p class="lists_more_price">33.3 $</p>
+                </div>
+                <a class="lists_shop_svg list_buy">
+                  <img src="img/white-shop.svg" alt="img">
+                </a>
+              </div>
+              <div class="lists_bought">
+                <img src="img/boughted.svg" alt="alt">
+                <p class="lists_p">კალთაშია</p>
+              </div>
+            </div>
+            <div class="lists_items comge biznesi media">
+              <div class="lists_title">
+                <div class="lists_arrow_img"></div>
+                <p class="lists_item_title">example2.com</p>
+              </div>
+              <div class="lists_price">
+                <div>
+                  <p class="lists_price_title">290</p>
+                  <p class="lists_more_price">93.5 $</p>
+                </div>
+                <a class="lists_shop_svg list_buy">
+                  <img src="img/white-shop.svg" alt="img">
+                </a>
+              </div>
+              <div class="lists_bought">
+                <img src="img/boughted.svg" alt="alt">
+                <p class="lists_p">კალთაშია</p>
+              </div>
+            </div>
+            <div class="lists_items netge biznesi">
+              <div class="lists_title">
+                <div class="lists_arrow_img"></div>
+                <p class="lists_item_title">example3.net</p>
+              </div>
+              <div class="lists_price">
+                <div>
+                  <p class="lists_price_title">240</p>
+                  <p class="lists_more_price">77.4 $</p>
+                </div>
+                <a class="lists_shop_svg  list_buy">
+                  <img src="img/white-shop.svg" alt="img">
+                </a>
+              </div>
+              <div class="lists_bought">
+                <img src="img/boughted.svg" alt="alt">
+                <p class="lists_p">კალთაშია</p>
+              </div>
+            </div>
+            <div class="lists_items orgge media">
+              <div class="lists_title">
+                <div class="lists_arrow_img"></div>
+                <p class="lists_item_title">example4.org</p>
+              </div>
+              <div class="lists_price">
+                <div>
+                  <p class="lists_price_title">320</p>
+                  <p class="lists_more_price">103.2 $</p>
+                </div>
+                <a class="lists_shop_svg list_buy">
+                  <img src="img/white-shop.svg" alt="img">
+                </a>
+              </div>
+              <div class="lists_bought">
+                <img src="img/boughted.svg" alt="alt">
+                <p class="lists_p">კალთაშია</p>
+              </div>
+            </div>
+            <div class="lists_items eduge udzravi_qoneba media">
+              <div class="lists_title">
+                <div class="lists_arrow_img"></div>
+                <p class="lists_item_title">example5.edu</p>
+              </div>
+              <div class="lists_price">
+                <div>
+                  <p class="lists_price_title">160</p>
+                  <p class="lists_more_price">51.6 $</p>
+                </div>
+                <a class="lists_shop_svg list_buy">
+                  <img src="img/white-shop.svg" alt="img">
+                </a>
+              </div>
+              <div class="lists_bought">
+                <img src="img/boughted.svg" alt="alt">
+                <p class="lists_p">კალთაშია</p>
+              </div>
+            </div>
+        </section>
+        <!------- section items -------->
+        <!------- not found footer -------->
+        <div class="footer">
+          <div class="container">
+            <div class="footer_img">
+              <img src="img/not found.png" alt="norfound">
+            </div>
+            <p class="footer_title">დომენი ვერ მოიძებნა</p>
+            <p class="footer_desc">მითითებული პარამეტრებით დომენების მარკეტში შედეგები ვერ მოიძებნა, შეცვალეთ ძიების
+              პარამეტრები და ცადეთ თავიდან</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------- not found footer -------->
+  <script src="js/js.js"></script>
+</body>
+
+</html>
